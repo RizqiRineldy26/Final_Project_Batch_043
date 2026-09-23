@@ -24,7 +24,7 @@ def checkpoint(name):
 
 CHAT_MODEL = "models/gemini-3.5-flash"
 EMBEDDING_MODEL = "gemini-embedding-2-preview"
-CHROMA_DIR = "./chroma_db"
+CHROMA_DIR = "./chroma_db_gemini_3072"
 JOURNAL_BUCKET = "Journal"
 JOURNAL_FILE = "jurnal skincare.pdf"
 
