@@ -71,5 +71,5 @@ Menghubungkan Data dan Jurnal dari Database dengan hasil model untuk memberikan 
 - [Dataset 1: Skin Issues Dataset — Ahmed Ismail, Kaggle.](https://www.kaggle.com/datasets/ahmedismaiil/skin-issues-version-2-dataset-balanced)
 - [Dataset 2: Facial Skin (Acne, Pigmentation, Pores, Wrinkles) — Shijo John, Kaggle.](https://www.kaggle.com/datasets/shijo96john/facial-skin-acne-pigmentation-pores-wrinkles)
 - [INKEEDecoder](https://inkeedecoder.com/)
-
+- [Alvarez GV, Kang BY, Richmond AM, Hoss E, Sulewski R, Minkis K, Rozenberg SS, Antonovich D, Boucher A, Bernstein EF, Bertucci V, Chapas AM, Cohen JL, Council ML, Dover JS, Geronemus R, Given KML, Goldbach HS, Goldman MP, Hooper D, Kaufman J, Munavalli G, Pacheco TR, Rossi AM, Wilson S, Alam M. Skincare ingredients recommended by cosmetic dermatologists: A Delphi consensus study. J Am Acad Dermatol. 2025 Dec;93(6):1509-1525. doi: 10.1016/j.jaad.2025.04.021. Epub 2025 Apr 14. PMID: 40233838.](https://pubmed.ncbi.nlm.nih.gov/40233838/)
 ---
