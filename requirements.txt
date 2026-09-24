@@ -1,6 +1,9 @@
 streamlit
 numpy<2
 pandas
+matplotlib
+seaborn
+plotly
 tensorflow-cpu==2.20.0
 pillow
 google-genai

@@ -160,8 +160,7 @@ chat_template = ChatPromptTemplate.from_messages(
             - If a exact active ingredient is absent, recommend products from the list that address the user's overall skin condition ({skin_condition}).
             - Clearly explain WHY each product is recommended (e.g., "While this product does not contain Isotretinoin, it contains BHA which addresses similar pore congestion...").
             - Only output "None" if the provided product list is completely empty or completely irrelevant to skincare.
-            - Show preview link that shows the image of the product recomendation.
-            - Generate the image to show the image base on product link.
+            - Provide the link of the product recommendation
             """
         ),
     ]
@@ -171,8 +170,9 @@ output_parser = StrOutputParser()
 
 
 def filter_product(skin_conditions):
-    filtered = df[df['problem'].isin(skin_conditions)]
-    return filtered
+    sub = df[df["problem"].isin(skin_conditions)][["product_name", "ingredient", "problem", "product_link"]]
+    sub = sub.drop_duplicates().head(40)
+    return sub.to_csv(index=False)
 
 
 def format_docs(docs):
