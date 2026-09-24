@@ -171,7 +171,7 @@ output_parser = StrOutputParser()
 
 def filter_product(skin_conditions):
     sub = df[df["problem"].isin(skin_conditions)][["product_name", "ingredient", "problem", "product_link"]]
-    sub = sub.drop_duplicates().head(40)
+    sub = sub.drop_duplicates()
     return sub.to_csv(index=False)
 
 
