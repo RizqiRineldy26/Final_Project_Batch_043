@@ -22,7 +22,7 @@ def checkpoint(name):
     print(f"CHECKPOINT: {name}", flush=True)
 
 
-CHAT_MODEL = "models/gemini-3.5-flash"
+CHAT_MODEL = "models/gemini-3.5-flash-lite"
 EMBEDDING_MODEL = "gemini-embedding-2-preview"
 CHROMA_DIR = "./chroma_db_gemini_3072"
 JOURNAL_BUCKET = "Journal"
@@ -160,7 +160,8 @@ chat_template = ChatPromptTemplate.from_messages(
             - If a exact active ingredient is absent, recommend products from the list that address the user's overall skin condition ({skin_condition}).
             - Clearly explain WHY each product is recommended (e.g., "While this product does not contain Isotretinoin, it contains BHA which addresses similar pore congestion...").
             - Only output "None" if the provided product list is completely empty or completely irrelevant to skincare.
-            - Provide the link of the product recommendation
+            - When giving recommended ingredients please provide brief explanation and justification based on the journal provided. 
+            - Provide at least 4 product recommendations and also provide the link of each product recommendation.
             """
         ),
     ]
